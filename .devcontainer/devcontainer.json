@@ -1,5 +1,6 @@
 {
-  "image": "node:18-alpine",
+  // "image": "node:18-alpine",
+  "build": { "dockerfile": "Dockerfile" },
 
   "customizations": {
     "vscode": {
