@@ -1,1 +1,1 @@
-# devcontiner-nodejs
+# devcontiner-MERN-stack
