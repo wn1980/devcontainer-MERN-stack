@@ -11,8 +11,7 @@
 		"esbenp.prettier-vscode",
 		"mongodb.mongodb-vscode",
 		"sdras.night-owl",
-		"rangav.vscode-thunder-client",
-		"ms-azuretools.vscode-docker"
+		"rangav.vscode-thunder-client"
 	]
     }
   },
