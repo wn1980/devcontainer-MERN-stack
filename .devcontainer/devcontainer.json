@@ -1,9 +1,9 @@
 {
   "name": "MERN Stack",
-  "build": { "dockerfile": "Dockerfile" },
-  // "dockerComposeFile": "docker-compose.yml",
-  // "service": "mongodb",
-  // "workspaceFolder": "/workspace",
+  // "build": { "dockerfile": "Dockerfile" },
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "nodejs",
+  "workspaceFolder": "/workspace",
 
   "customizations": {
     "vscode": {
@@ -11,7 +11,8 @@
 		"esbenp.prettier-vscode",
 		"mongodb.mongodb-vscode",
 		"sdras.night-owl",
-		"rangav.vscode-thunder-client"
+		"rangav.vscode-thunder-client",
+		"ms-azuretools.vscode-docker"
 	]
     }
   },

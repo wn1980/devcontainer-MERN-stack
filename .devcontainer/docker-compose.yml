@@ -11,6 +11,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: mern_nodejs
+    command: /bin/sh -c "while sleep 1000; do :; done"  
     # command: sleep infinity
     # depends_on:
     #     - mongodb
