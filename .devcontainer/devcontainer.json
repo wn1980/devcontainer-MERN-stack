@@ -1,7 +1,9 @@
 {
-  "image": "nodejs",
-  "name": "nodejs",
-  "build": { "dockerfile": "Dockerfile" },
+  "name": "MERN Stack",
+  // "build": { "dockerfile": "Dockerfile" },
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "mongodb",
+  "workspaceFolder": "/workspace",
 
   "customizations": {
     "vscode": {

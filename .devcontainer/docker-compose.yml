@@ -1,0 +1,37 @@
+version: '3.8'
+
+volumes:
+  dbdata:
+
+services:
+
+  nodejs:
+    image: nodejs
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mern_nodejs
+    # command: sleep infinity
+    # depends_on:
+    #     - mongodb
+    network_mode: service:mongodb
+    volumes:
+      - ..:/workspace:cached
+
+  mongodb:
+    image: mongo
+    container_name: mern_mongodb
+    # restart: unless-stopped
+    #init: true
+    #network_mode: bridge
+    volumes:
+      - dbdata:/data/db
+    # environment:
+    #   MONGO_INITDB_ROOT_USERNAME: root
+    #   MONGO_INITDB_ROOT_PASSWORD: 123456
+    #   MONGO_INITDB_DATABASE: example
+    #   MONGO_INITDB_USERNAME: admin
+    #   MONGO_INITDB_PASSWORD: 123456
+    ports:
+      - 27017:27017
+
