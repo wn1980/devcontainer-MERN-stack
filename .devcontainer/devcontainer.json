@@ -11,7 +11,8 @@
 		"esbenp.prettier-vscode",
 		"mongodb.mongodb-vscode",
 		"sdras.night-owl",
-		"rangav.vscode-thunder-client"
+		"rangav.vscode-thunder-client",
+		"dsznajder.es7-react-js-snippets"
 	]
     }
   },
