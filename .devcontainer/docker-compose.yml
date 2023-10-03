@@ -1,7 +1,8 @@
 version: '3.8'
 
 volumes:
-  dbdata:
+  mongodb_data:
+    external: true
 
 services:
 
@@ -17,7 +18,7 @@ services:
     #     - mongodb
     network_mode: service:mongodb
     volumes:
-      - ..:/workspace:cached
+      - $HOME/DEV/MERN-projects:/workspace:cached
 
   mongodb:
     image: mongo
@@ -26,7 +27,7 @@ services:
     #init: true
     #network_mode: bridge
     volumes:
-      - dbdata:/data/db
+      - mongodb_data:/data/db
     # environment:
     #   MONGO_INITDB_ROOT_USERNAME: root
     #   MONGO_INITDB_ROOT_PASSWORD: 123456
