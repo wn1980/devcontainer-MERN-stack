@@ -12,7 +12,8 @@
 		"mongodb.mongodb-vscode",
 		"sdras.night-owl",
 		"rangav.vscode-thunder-client",
-		"dsznajder.es7-react-js-snippets"
+		"dsznajder.es7-react-js-snippets",
+		"ritwickdey.LiveServer"
 	]
     }
   },
