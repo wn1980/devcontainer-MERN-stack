@@ -8,13 +8,14 @@
   "customizations": {
     "vscode": {
       "extensions": [
-		"esbenp.prettier-vscode",
-		"mongodb.mongodb-vscode",
-		"sdras.night-owl",
-		"rangav.vscode-thunder-client",
-		"dsznajder.es7-react-js-snippets",
-		"ritwickdey.LiveServer"
-	]
+        "esbenp.prettier-vscode",
+        "mongodb.mongodb-vscode",
+        "sdras.night-owl",
+        "rangav.vscode-thunder-client",
+        "dsznajder.es7-react-js-snippets",
+        "ritwickdey.LiveServer",
+        "Postman.postman-for-vscode"
+      ]
     }
   },
 
