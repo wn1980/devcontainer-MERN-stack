@@ -19,6 +19,7 @@ services:
     network_mode: service:mongodb
     volumes:
       - $HOME/DEV/MERN-projects:/workspace:cached
+      - $HOME/DEV/MERN-projects/.config:/home/node/.config:rw
     # ports:
     #   - 5001:5001
 
