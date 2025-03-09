@@ -4,6 +4,8 @@ volumes:
   config:
   mongodb_data:
     external: true
+  webapp_ws:
+    external: true
 
 services:
 
@@ -19,8 +21,9 @@ services:
     #     - mongodb
     network_mode: service:mongodb
     volumes:
-      - $HOME/DEV/MERN-projects:/workspace:cached
+      - webapp_ws:/workspace:cached
       - config:/home/node/.config:rw
+      #- $HOME/DEV/MERN-projects:/workspace:cached
       #- $HOME/DEV/MERN-projects/.config:/home/node/.config:rw
     # ports:
     #   - 5001:5001
