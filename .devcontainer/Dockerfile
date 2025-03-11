@@ -3,7 +3,9 @@
 FROM node:22-alpine
 RUN apk update && apk --no-cache add \
     git \
-    curl
+    curl \
+    wget \
+    gcompat
 RUN npm install -g firebase-tools && \
     npm install -g typescript
 RUN curl -O https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz && \
